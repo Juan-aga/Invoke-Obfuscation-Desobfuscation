@@ -1,3 +1,6 @@
 [submodule "Invoke-Obfuscation"]
 	path = Invoke-Obfuscation
 	url = git@github.com:danielbohannon/Invoke-Obfuscation.git
+[submodule "Revoke-Obfuscation"]
+	path = Revoke-Obfuscation
+	url = git@github.com:danielbohannon/Revoke-Obfuscation.git
