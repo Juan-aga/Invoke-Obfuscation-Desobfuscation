@@ -16,6 +16,13 @@ if (!$Compressed)
 
 $Pos =  $Compressed.LastIndexOf('|')
 
-$Decompressed = $Compressed.Remove($Pos, $Compressed.length - $Pos)
+if ($Pos -gt 0)
+{
+        $Decompressed = $Compressed.Remove($Pos, $Compressed.length - $Pos)
+}
+else
+{
+        $Decompressed = $Compressed.Remove( 0, $Compressed.IndexOf('('))
+}
 
 Invoke-Expression $Decompressed
