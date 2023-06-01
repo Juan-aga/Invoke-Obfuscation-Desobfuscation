@@ -1,6 +1,20 @@
 # Invoke-Obfuscation-Desobfuscation
-Este es un repositorio con información sobre como desofuscar comandos o scrpts ofuscados con Invoke-Obfuscation
 
-Hay dos powershell scripts para desofuscar comandos, uno ofuscado con caracteres especiales y otro com caracteres comprimidos.
+This repository provides information and scripts for deobfuscating commands or scripts obfuscated with Invoke-Obfuscation.
 
-Hay que guardar el comando que se quiere desofuscar en un archivo y pasarle el nombre del archivo como parametro a los scripts.
+## Overview
+
+- **Invoke-Obfuscation**: This submodule contains the original Invoke-Obfuscation tool, which is used to obfuscate the code that you want to deobfuscate.
+
+- **Revoke-Obfuscation**: This submodule is another tool designed to help determine if a command is obfuscated with the Invoke-Obfuscation tool.
+
+## Deobfuscation Scripts
+
+There are two PowerShell scripts provided in this repository for deobfuscating commands:
+
+1. **DecodeSpecialChar.ps1**: Use this script if the command you want to deobfuscate is obfuscated with special characters.
+
+2. **Decompress.ps1**: Use this script if the command you want to deobfuscate is obfuscated with compressed characters.
+
+To deobfuscate a command, save the obfuscated command in a file and pass the filename as a parameter to the respective deobfuscation script.
+
